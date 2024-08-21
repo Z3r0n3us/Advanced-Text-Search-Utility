@@ -22,7 +22,7 @@ The Advanced Text Search Utility is a powerful, interactive command-line tool de
 ## Installation
 
 1. Clone this repository:
-it clone https://github.com/Z3r0n3us/advanced-text-search.git
+it clone https://github.com/Z3r0n3us/Advanced-Text-Search-Utility
 cd advanced-text-search
 
 
