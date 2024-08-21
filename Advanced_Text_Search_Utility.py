@@ -35,6 +35,13 @@ def save_config(config):
     with open(CONFIG_FILE, 'w') as configfile:
         config.write(configfile)
 
+def complete_path(text, state):
+    if '~' in text:
+        text = os.path.expanduser(text)
+    if os.path.isdir(text):
+        text += '/'
+    return (glob.glob(text + '*') + [None])[state]
+
 def run_command(command, preview=False):
     try:
         if preview:
@@ -221,11 +228,21 @@ def print_statistics(results):
     print(f"Unique matches: {unique_matches}")
     print(f"Files with matches: {len(results)}")
 
+
 def main():
     setup_history()
     config = load_config()
     print("Welcome to the Advanced Text Search Utility!")
+    
+    # Set up tab completion for file paths
+    readline.set_completer_delims(' \t\n;')
+    readline.parse_and_bind("tab: complete")
+    readline.set_completer(complete_path)
+    
     file_pattern = input("Enter the file name or pattern to search (e.g., *.txt for all text files): ")
+    
+    # Reset completer after getting file pattern
+    readline.set_completer(None)
     
     matching_files = glob.glob(file_pattern)
     if not matching_files:
