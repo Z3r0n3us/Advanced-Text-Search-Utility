@@ -22,7 +22,7 @@ The Advanced Text Search Utility is a powerful, interactive command-line tool de
 ## Installation
 
 1. Clone this repository:
-it clone https://github.com/yourusername/advanced-text-search.git
+it clone https://github.com/Z3r0n3us/Advanced-Text-Search-Utility
 cd advanced-text-search
 
 
@@ -82,4 +82,4 @@ Contributions to the Advanced Text Search Utility are welcome! Please feel free 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Z3r0n3us/Advanced-Text-Search-Utility/blob/main/License) file for details.
