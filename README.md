@@ -82,4 +82,4 @@ Contributions to the Advanced Text Search Utility are welcome! Please feel free 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Z3r0n3us/Advanced-Text-Search-Utility/blob/main/License) file for details.
